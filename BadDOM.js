@@ -13,9 +13,9 @@ const vDiff = (target, source) => {
 			}
 			this.iterate(target, vHTML);
 		},
-		iterate(targetNode, sourceNode, tOriginal, sOriginal) {
+		iterate(targetNode, sourceNode, tOriginal) {
 			if (targetNode || sourceNode) {
-				this.checkAdditions(targetNode, sourceNode, tOriginal, sOriginal);
+				this.checkAdditions(targetNode, sourceNode, tOriginal);
 				if (targetNode && sourceNode && targetNode.nodeName !== sourceNode.nodeName) {
 					this.checkNodeName(targetNode, sourceNode);
 				} else if (targetNode && sourceNode && targetNode.nodeName === sourceNode.nodeName) {
@@ -55,7 +55,7 @@ const vDiff = (target, source) => {
 				targetNode.textContent = sourceNode.textContent;
 			}
 		},
-		checkAdditions(targetNode, sourceNode, tParent = this.settings.original, sParent) {
+		checkAdditions(targetNode, sourceNode, tParent = this.settings.original) {
 			if (sourceNode && targetNode === undefined) {
 				const newNode = sourceNode.cloneNode(true);
 				tParent.nodeType !== 3 && tParent.nodeType !== 8 && tParent.appendChild(newNode);
