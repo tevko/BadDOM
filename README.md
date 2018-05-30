@@ -24,11 +24,7 @@ vDiff(document.querySelector('#My-App'), `&lt;div id="My-App"&gt;Hello, ${name}&
 </code>	
 </pre>
 </p>
-<p>An example of this behavior can be found below, wherein a working image slider is being rendered into the dom and transitioned based on a counter state. 
-<section>
-	<img style="display: block" src="https://placeimg.com/700/200/animals" alt="">
-</section>
-<button>Get Next Image</button>
+<p>An example of this behavior can be found <a href="https://s.codepen.io/tevko/debug/LzXjKE#slider">here</a>, wherein a working image slider is being rendered into the dom and transitioned based on a counter state. 
 <p>Here's the code necessary to render the slider:
 <pre>
 <code>
