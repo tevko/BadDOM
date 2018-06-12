@@ -1,0 +1,24 @@
+{
+  "name": "baddom",
+  "version": "1.0.0",
+  "description": "The Worlds smalles component renderer",
+  "main": "BadDOM.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tevko/BadDOM.git"
+  },
+  "keywords": [
+    "javascript",
+    "es6",
+    "framework"
+  ],
+  "author": "@tevko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tevko/BadDOM/issues"
+  },
+  "homepage": "https://github.com/tevko/BadDOM#readme"
+}
