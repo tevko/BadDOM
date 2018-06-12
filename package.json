@@ -4,7 +4,7 @@
   "description": "The Worlds smalles component renderer",
   "main": "BadDOM.js",
   "scripts": {
-    "test": "npm run test"
+    "precommit": "./node_modules/.bin/eslint BadDom.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/tevko/BadDOM/issues"
   },
-  "homepage": "https://github.com/tevko/BadDOM#readme"
+  "homepage": "https://github.com/tevko/BadDOM#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
 }
