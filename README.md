@@ -2,7 +2,7 @@
 the smallest component renderer
 <h1>Introducing: Bad-DOM - the smallest<sup>*</sup> component renderer</h1>
 
-<span><sup>*</sup>seriously, it's 800 bytes minified + gzipped</span>
+<span><sup>*</sup>seriously, it's 592 bytes minified + gzipped</span>
 
 <h2>What does it do?</h2>
 <p>Bad-DOM is a lazy diffing algorithm and HTML component renderer. It's lazy because it doesn't try too hard to keep the browser from doing unnecessary work, but still does a pretty good job.</p>
