@@ -5,14 +5,13 @@ window.vDiff = (target, source) => {
             original: target,
         },
         replace(nTarget, nSource = target) {
-            const v = document.createElement('template');
-            v.innerHTML = nSource;
-            const vHTML = v.content.firstChild.nextElementSibling;
-            if (vHTML.nodeName !== nTarget.nodeName) {
-                nTarget.parentElement.replaceChild(vHTML, nTarget);
-                return;
-            }
-            this.iterate(target, vHTML);
+            const v = new DOMParser().parseFromString(source, 'text/html').body.childNodes
+			const vHTML = v[0];
+			if (vHTML.nodeName !== target.nodeName) {
+				target.parentElement.replaceChild(vHTML, target);
+				return;
+			}
+			this.iterate(target, vHTML);
         },
         iterate(targetNode, sourceNode, tOriginal) {
             if (targetNode || sourceNode) {
